@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(40, 44, 52);
+    background-color: #222831;
     position: relative;
     font-family: Arial, sans-serif;
 }
@@ -15,7 +15,7 @@ body {
 
 .header-2 {
     display: flex; 
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center; 
     justify-content: flex-end; 
     padding: 48px 96px;
@@ -419,27 +419,27 @@ footer {
             background-color: transparent;
             background-color: #222831;
         }
-/* .header-5{
+.header-5{
     font-family: 'Poppins';
-    margin-top: 268px;
-    padding-left: 120px;
-    font-size: 64px;
+    margin-top: 10%;
+    padding-left: 10%;
+    /* font-size: 64px; */
     color: aliceblue;
 }
 .header-6{
-    font-family: Poppins;
-    font-size: 64px;
+    font-family: 'Poppins';
+    /* font-size: 64px; */
     color: aqua;
 }
 .button{
-    padding-left: 120px;
+    padding-left: 10%;
     
     
 }
 .btn-1, .btn-2, .btn-3, .btn-4{
     color: aliceblue;
-    margin: 0px 10px;
-    padding: 10px 30px;
+    margin-right:10px;
+    padding: 0.5% 1.5%;
 }
 .btn-2, .btn-3, .btn-4{
     background-color: #393E46;
@@ -449,191 +449,23 @@ footer {
     margin-top: 48px;
     display:flex;
     justify-content: center;
+    padding-left: 6%;
 
 
 }
 .image-5-6-7{
-    width: 368px;
-    height:280px;
+    width: 75%;
+    height:auto;
     
-} */
-
-/* Chatgpt Section */
-.header-5 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 74px;
-    color: aliceblue;
-    margin-top: 268px;
-    padding-left: 120px;
 }
 
-.header-6 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 74px;
-    color: aqua;
-}
-
-.button {
-    padding-left: 120px;
-}
-
-.btn-1, .btn-2, .btn-3, .btn-4 {
-    color: aliceblue;
-    margin: 0px 10px;
-    padding: 10px 30px;
-}
-
-.btn-2, .btn-3, .btn-4 {
-    background-color: #393E46;
-}
-
-.image-section {
-    margin-top: 48px;
-    display: flex;
-    justify-content: center;
-    padding-left: 20px; 
-}
-
-.image-5-6-7 {
-    width: 300px; 
-    height: auto; 
-    margin-right: 20px; 
-}
-
-
-
-@media (max-width: 767px) {
-    .header-5 {
-        font-size: 32px;
-        padding-left: 20px;
-        margin-top: 100px;
-    }
-    .header-6 {
-        font-size: 32px;
-    }
-    .button {
-        padding-left: 20px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-    .btn-1, .btn-2, .btn-3, .btn-4 {
-        font-size: 14px;
-        padding: 8px 20px;
-    }
-    .image-section {
-        margin-top: 20px;
-        justify-content: space-around; 
-    }
-    .image-5-6-7 {
-        width: 80%; 
-        margin-bottom: 20px; 
+@media (max-width: 768px){
+    .col-md-12 {
+        
+        text-align: center;
     }
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .header-5 {
-        font-size: 48px;
-        padding-left: 60px;
-        margin-top: 180px;
-    }
-    .header-6 {
-        font-size: 48px;
-    }
-    .button {
-        padding-left: 60px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-    .btn-1, .btn-2, .btn-3, .btn-4 {
-        font-size: 16px;
-        padding: 10px 25px;
-    }
-    .image-section {
-        margin-top: 30px;
-        justify-content: space-around; 
-    }
-    .image-5-6-7 {
-        width: 250px; 
-        height: auto;
-    }
-}
-
-
-@media (min-width: 1025px) {
-    .header-5 {
-        font-size: 44px;
-        padding-left: 60px;
-        margin-top: 268px;
-    }
-    .header-6 {
-        font-size: 44px;
-    }
-    .button {
-        padding-left: 60px;
-    }
-    .image-section {
-        justify-content: space-between; 
-    }
-    .image-5-6-7 {
-        width: 368px;
-        height: 280px;
-        margin-right: 20px; 
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1264px) {
-    .header-5 {
-        font-size: 50px; 
-        padding-left: 0px;
-        margin-top: 200px; 
-    }
-    .header-6 {
-        font-size: 50px;
-    }
-    .button {
-        padding-left: 0px;
-    }
-    .image-section {
-        margin-top: 30px;
-        justify-content: space-between; 
-    }
-    .image-5-6-7 {
-        width: 320px; 
-        height: auto;
-        margin-right: 20px;
-    }
-}
-
-@media (max-width:1440px){
-    .header-5 {
-        font-size: 50px; 
-        padding-left:60px;
-        margin-top: 200px; 
-    }
-    .header-6 {
-        font-size: 50px;
-    }
-    .button {
-        padding-left: 55px;
-    }
-    .image-section {
-        margin-top: 30px;
-        justify-content: space-between; 
-    }
-    .image-5-6-7 {
-        width: 320px; 
-        height: auto;
-        margin-right: 20px;
-    }
-    .btn-1, .btn-2, .btn-3, .btn-4 {
-        color: aliceblue;
-        margin: 0px 10px;
-        padding: 7px 20px;
-    }
-}
 
 
 
