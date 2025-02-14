@@ -5,112 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --turquoise: #00D1B2;
-            
-            --input-bg: #374151;
-        }
-
-        body {
-            background-color: #222831;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            padding: 4rem 2rem;
-        }
-
-        .heading {
-            font-size: 4rem;
-            font-weight: bold;
-            color: white;
-            line-height: 1.2;
-        }
-
-        .highlight {
-            color: var(--turquoise);
-            display: block;
-        }
-
-        .form-control {
-            background-color: var(--input-bg);
-            border: none;
-            color: white;
-            padding: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .form-control::placeholder {
-            color: #9CA3AF;
-        }
-
-        .form-control:focus {
-            background-color: var(--input-bg);
-            color: white;
-            box-shadow: none;
-            border: 1px solid var(--turquoise);
-        }
-
-        .form-label {
-            color: white;
-            margin-bottom: 0.5rem;
-        }
-
-        .btn-send {
-            background-color: var(--turquoise);
-            color: white;
-            padding: 0.75rem 2rem;
-            border: none;
-            border-radius: 50px;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .btn-send:hover {
-            background-color: #00bfa5;
-            transform: translateY(-2px);
-        }
-
-        .illustration {
-            max-width: 300px;
-            margin: 2rem 0;
-        }
-
-        textarea.form-control {
-            min-height: 150px;
-            resize: none;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css"> 
 </head>
 <body>
-    <div class="container">
+    <section class="container container1">
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <h1 class="heading">
                     Got a project in
                     <span class="highlight">mind?</span>
                 </h1>
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-02-12%20at%2012.52.39_6e64aef0.jpg-iJJ2BXEJjY830InwEdGBfoXxOYypA3.jpeg" alt="Project illustration" class="illustration">
+                <div class="d-flex justify-content-center"> 
+                    <img src="/Assets/image8.png" alt="Project illustration" class="illustration img-fluid">
+                </div>
             </div>
             <div class="col-lg-6">
                 <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Your name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Your email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email">
-                    </div>
-                    <div class="mb-4">
-                        <label for="message" class="form-label">Your Message</label>
-                        <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                    <div class="row">
+                        <div class="col">
+                            <label for="name" class="form-label">Your name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="col">
+                            <label for="email" class="form-label">Your email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="mt-4 ">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" style="height: 200px" id="message" placeholder="Message"></textarea>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-send">
                         Send Message
@@ -121,6 +45,50 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
+<hr class="text-light">
+    <section class="container container1">
+
+            <div class="row ">
+                <div>
+                    <ul class="unstyled-list d-flex justify-content-center">
+                        <li class="p-4">
+                            <i class="bi bi-house footer-logo p-2"></i><a class="footer-item  " href="homepage.html">Home</a>
+                        </li>
+                        <li class="p-4">
+                            <i class="bi bi-person footer-logo p-2"></i><a class="footer-item " href="aboutme.html">About Me</a>
+                        </li>
+                        <li class="p-4">
+                            <i class="bi bi-telephone footer-logo p-2"></i><a class="footer-item " href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="unstyled-list d-flex justify-content-center">
+                        <li class="p-3">
+                            <i class="bi bi-facebook icon-logo w-25"></i>
+                        </li>
+                        <li class="p-3">
+                            <i class="bi bi-instagram icon-logo"></i>
+                        </li>
+                        <li class="p-3">
+                            <i class="bi bi-twitter icon-logo"></i>
+                        </li>
+                        <li class="p-3">
+                            <i class="bi bi-youtube icon-logo"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-end footer-content">
+                    <p>Terms of Service - Privacy Policy</p>
+                </div>
+            </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+
 </html>
